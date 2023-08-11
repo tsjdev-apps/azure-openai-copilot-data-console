@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using System.Net.Http.Headers;
 
 namespace SimpleAzureOpenAIChat.Helpers;
 
@@ -9,18 +10,11 @@ public static class HttpClientHelper
     {
         var httpClient = new HttpClient();
 
+        httpClient.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));        
+
         httpClient.DefaultRequestHeaders.Add(
             "api-key", 
-            configuration["Azure:OpenAI:ApiKey"]);
-
-        httpClient.DefaultRequestHeaders.Add(
-            "chatgpt_url", 
-            $"https://{configuration["Azure:OpenAI:Resource"]}.openai.azure.com/openai/" +
-            $"deployments/{configuration["Azure:OpenAI:Deployment"]}/" +
-            $"completions?api-version=2023-03-15-preview");
-
-        httpClient.DefaultRequestHeaders.Add(
-            "chatgpt_key", 
             configuration["Azure:OpenAI:ApiKey"]);
 
         httpClient.DefaultRequestHeaders.Add(
