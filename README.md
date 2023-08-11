@@ -26,6 +26,6 @@ dotnet user-secrets set Azure:OpenAI:ApiKey = <API KEY>
 
 If you are more interested into details, please see the following [medium.com](https://www.medium.com) posts:
 
-- [Use Azure OpenAI to create a Copilot on your own data — Part 1](https://medium.com/medialesson/use-azure-openai-to-create-a-copilot-on-your-own-data-part-1-ba1d997298ca)
+- [Use Azure OpenAI to create a Copilot on your own data / Part 1](https://medium.com/medialesson/use-azure-openai-to-create-a-copilot-on-your-own-data-part-1-ba1d997298ca)
 
-- [Use Azure OpenAI to create a Copilot on your own data in C#— Part 2](https://medium.com/medialesson/use-azure-openai-to-create-a-copilot-on-your-own-data-in-c-part-2-b7acc1922337)
+- [Use Azure OpenAI to create a Copilot on your own data in C# / Part 2](https://medium.com/medialesson/use-azure-openai-to-create-a-copilot-on-your-own-data-in-c-part-2-b7acc1922337)
