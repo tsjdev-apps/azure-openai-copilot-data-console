@@ -24,15 +24,14 @@ while (true)
     messages.Add(new ChatMessage("user", messageContent));
 
     // 5. Create request
-    RequestBody requestBody = RequestHelper.CreateRequestBody(messages, configuration);
-
-    // 6. Make request
     string endpoint = $"https://{configuration["Azure:OpenAI:Resource"]}.openai.azure.com/" +
         $"openai/deployments/{configuration["Azure:OpenAI:Deployment"]}/" +
         $"extensions/chat/completions?api-version=2023-06-01-preview";
+    HttpRequestMessage requestMessage = RequestHelper.CreateHttpRequestMessage(endpoint, messages, configuration);
 
+    // 6. Make request
     HttpResponseMessage response = await httpClient
-        .PostAsJsonAsync(endpoint, requestBody);
+        .SendAsync(requestMessage);
 
     // 7. Handle request
     ChatMessage? assistantMessage = await response
