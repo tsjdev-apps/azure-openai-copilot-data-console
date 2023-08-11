@@ -28,7 +28,7 @@ public record DataSourceParameters(
     [property: JsonPropertyName("semanticConfiguration")] string? SemanticConfiguration = "");
 
 public record DataSourceParametersFieldsMapping(
-    [property: JsonPropertyName("contentField")] string? ContentField = "",
+    [property: JsonPropertyName("contentFields")] string[]? ContentFields = default,
     [property: JsonPropertyName("titleField")] string? TitleField = null,
     [property: JsonPropertyName("urlField")] string? UrlField = null,
     [property: JsonPropertyName("filepathField")] string? FilePathField = null);
