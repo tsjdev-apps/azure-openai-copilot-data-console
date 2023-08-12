@@ -2,8 +2,6 @@
 using SimpleAzureOpenAIChat.ExtensionMethods;
 using SimpleAzureOpenAIChat.Helpers;
 using SimpleAzureOpenAIChat.Models;
-using System.Net.Http.Json;
-using System.Text.Json;
 
 // 1. Make user secrets accessible
 IConfigurationRoot configuration = new ConfigurationBuilder()
