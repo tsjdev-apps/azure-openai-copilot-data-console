@@ -17,9 +17,9 @@ dotnet user-secrets set Azure:Search:Endpoint <COMPLETE ENDPOINT>
 dotnet user-secrets set Azure:Search:ApiKey <API KEY>
 dotnet user-secrets set Azure:Search:IndexName <INDEX NAME>
 
-dotnet user-secrets set Azure:OpenAI:Resource = <JUST RESOURCE NAME>
-dotnet user-secrets set Azure:OpenAI:Deployment = <DEPLOYMENT NAME>
-dotnet user-secrets set Azure:OpenAI:ApiKey = <API KEY>
+dotnet user-secrets set Azure:OpenAI:Resource <JUST RESOURCE NAME>
+dotnet user-secrets set Azure:OpenAI:Deployment <DEPLOYMENT NAME>
+dotnet user-secrets set Azure:OpenAI:ApiKey <API KEY>
 ```
 
 ## Blog Posts
