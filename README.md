@@ -29,3 +29,8 @@ If you are more interested into details, please see the following [medium.com](h
 - [Use Azure OpenAI to create a Copilot on your own data / Part 1](https://medium.com/medialesson/use-azure-openai-to-create-a-copilot-on-your-own-data-part-1-ba1d997298ca)
 
 - [Use Azure OpenAI to create a Copilot on your own data in C# / Part 2](https://medium.com/medialesson/use-azure-openai-to-create-a-copilot-on-your-own-data-in-c-part-2-b7acc1922337)
+
+- [Deploy an Azure OpenAI service with LLM deployments via Bicep](https://medium.com/medialesson/deploy-an-azure-openai-service-with-llm-deployments-via-bicep-244411472d40)
+
+- [Use Azure OpenAI to generate images using C#](https://medium.com/medialesson/use-azure-openai-to-generate-images-using-c-c2fa32e12b72)
+    - [GitHub Repository](https://github.com/tsjdev-apps/azure-openai-image-generation-console)
